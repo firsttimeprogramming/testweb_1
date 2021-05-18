@@ -1,0 +1,33 @@
+body {
+  background-image: url('https://images.pexels.com/photos/7558434/pexels-photo-7558434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+h1 {
+  font-family: fantasy;
+  color: white;
+  text-align: center;
+  border: 2px;
+  border-color: blue;
+  border-style: solid;
+}
+
+p {
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+a:link {
+  color: red;
+}
+a:hover {
+  color: hotpink;
+}
+
+li{
+  color: rgb(82, 82, 155);
+  font-size: 50px;
+}
