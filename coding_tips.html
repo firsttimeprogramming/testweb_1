@@ -13,6 +13,22 @@
 <h2>cat list.txt | awk 'BEGIN {a="'"'"'"}{print "cp "a$0a" Directory"}' > script.sh</h2>
 <h2>sh script.sh</h2>
 <h2>—————————————</h2>
+<h2>how to install specific dependency that is needed and it's hard to find online</h2>
+<h2>choose to use mvn and use the pom.xml to install such dependency.</h2>
+<h2>add following statements in the pom.xml file (use mysql connector as e.g.)</h2>
+<h3><project>
+	.....
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.26</version>
+</dependency>
+	</dependencies>
+	.....
+   </project>
+</h3>
 <h2>|Serializable</h2>
 <h2>—————————————</h2>
 <h2>The ability an object being transfer into another form and back.</h2>
