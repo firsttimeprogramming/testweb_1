@@ -96,6 +96,38 @@ WHERE Country IN ('Germany', 'France', 'UK'))</h2>
 <h2>no clustered index: only the references are stored in tree</h2>
 <h2>clustered index: a dynamic(balanced) tree is created when we create a clustered index. data is moved to the tree. primary key as tree leafs.</h2>
 <h2>—————————————</h2>
+<h1>jdbc</h1>
+<h2>—————————————</h2>
+<h2>CallableStatement: calling an stored procedure and function in database. (define countries name and find out how many city within in that country.)</h2>
+<h2>—————————————</h2>
+<h2>Transaction Management: ACID</h2>
+<h2>A: (Atomicity) either successful or none</h2>
+<h2>C: (Consistency) make database from 1 consistent state to another consistent state.</h2>
+<h2>I: (Isolation) ensures all transactions are isolated from other transactions.</h2>
+<h2>D: (Durability) once transactions are committed. it will remain in events of errors etc.</h2>
+<h2>—————————————</h2>
+<h2>JDBC DriverManager: software component that enables java application to interact with the database.</h2>
+<h2>—————————————</h2>
+<h2>execute, executeQuery, executeUpdate</h2>
+<h2>execute: execute queries and return true if execute is successful.</h2>
+<h2>executeQuery: execute queries that return single result set object.</h2>
+<h2>executeUpdate: execute DDL and DML statements like insert, update, delete and create.</h2>
+<h2>—————————————</h2>
+<h2>JDBC statements: send to database and prepared for execution, only the values need to be sent.</h2>
+<h2>—————————————</h2>
+<h2>JDBC API: |Driver manager: control JDBC driver|</h2>
+<h2>JDBC-ODBC Bridge: provide JDBC access through ODBC driver</h2>
+<h2>Vendor Specific JDBC Driver: 2 groups driver connect a client directly to DBMS.</h2>
+<h2>Vendor specific ODBC Driver: mediating layer between jdbc driver and vendor client libraries.</h2>
+<h2>—————————————</h2>
+<h2>connect to db:</h2>
+<h2>import the JDBC driver</h2>
+<h2>create connection with connection object</h2>
+<h2>create statements</h2>
+<h2>execute queries with the prepared statements</h2>
+<h2>Iterate throught the result and close the connection</h2>
+<h2>—————————————</h2>
+<h2>—————————————</h2>
 <p>
 <ul>
 <li><a href="index.html">back</a></li>
