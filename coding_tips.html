@@ -141,7 +141,64 @@ WHERE Country IN ('Germany', 'France', 'UK'))</h2>
 <h2>Primary Key: an identifier compose of one or emore atributes that uniquely identify a row.</h2>
 <h2>Primary key: made of many unique Key</h2>
 <h2>—————————————</h2>
-
+<h2>relationships in data modeling:</h2>
+<h2>1:1|1:M|M:N</h2>
+<h2>—————————————</h2>
+<h2>Cardinality: a property assigned to an attributes that connect to another entity in database</h2>
+<h2>—————————————</h2>
+<h2>composite attributes: attached to an entity that is in 1:m relationship, 1 entity can have many attributes likes that. (An attributes that is composed of more than 1 attributes.)</h2>
+<h2>—————————————</h2>
+<h2>multi-valued attributes: an attribute that can have many value (e.g. color or the car, 1 car can have many color)</h2>
+<h2>—————————————</h2>
+<h2>Drived attribute: an attribute whose value is calculated from other attributes</h2>
+<h2>—————————————</h2>
+<h2>Normalization: process for evaluating and correcting table structures to minimize data redundancies and reduce data anomalilies (data anomalilies: inconsistent changes have made in database [e.g. address changles not shown in all files in database]). You will need to normalize when there is m:n relationship.</h2>
+<h2>—————————————</h2>
+<h2>Data redundancy: data is being stored repeatedly in different location in the database. (Data redundancy could be caused by e.g. student name being stored in the class table which student table has their own list of students id and names.)</h2>
+<h2>Duplication: a data existed in other row of the table but stored repreatly in the other related table. which it's not necessary.</h2>
+<h2>—————————————</h2>
+<h2>partial dependency: exist when there is functional dependence where determinant is only part of the primary key. (e.g. (A, B) → (C, D), B → C, which primary key is (A, B) then functional dependence is B → C as B is part of the primary key that is needed to determine the value of C)</h2>
+<h2>transitive dependency: exist when there is a determinant is working as part of the transitive function from one table to another table. (e.g.B → C, A → B, which A is primary key. then transitive dependency is: A → C )</h2>
+<h2>complete dependency: </h2>
+<h2>—————————————</h2>
+<h2>normal form: result of Normalization, a process of process for evaluating and correcting table structures to minimize data redundancies.</h2>
+<h2>3 normal form</h2>
+<h2>1NF: no repeating groups, and PK identified</h2>
+<h2>2NF:1NF and no partial dependencies</h2>
+<h2>3NF:2NF and no transitive dependencies</h2>
+<h2>—————————————</h2>
+<h2>Database integrity is rules that require the database to have all primary key to be unique, all rows haveunique identity and foreight key can properly reference primary values. (Includes (Entity Integrity, Referential Integrity, Domain Integrity))</h2>
+<h2>—————————————</h2>
+<h2>User-defined integrity refer to user's ability to define each row with specific type of value e.g. it can't be null or something like those.</h2>
+<h2>—————————————</h2>
+<h2>relational database: database that stores and provides access to api that are related.</h2>
+<h2>non-relational: database that does not use a storage model optimized for specific requirements of typeof data being stored.</h2>
+<h2>—————————————</h2>
+<h2>DDL: data definition language, used in DBA and by database designer to define both schemas.
+Major DDL: Create, Alter, Drop.</h2>
+<h2>—————————————</h2>
+<h2>DML: data manipulation language, provides a set of operation for retrieval, insertion, deletion, and modifucation.
+Major DML: Insert, Update, Delete, Merge.</h2>
+<h2>—————————————</h2>
+<h2>insert values into a table if you don't know the order of columns:</h2>
+<h2>We can insert the values with Where condition for where condition is true to insert the value.
+specify column name of the order.</h2>
+<h2>—————————————</h2>
+<h2>Truncate delete all rows or tuples from table. Delete is used to delete specific row. Truncate cannot be rolled backed.</h2>
+<h2>—————————————</h2>
+<h2>SQL: is not case sensitive</h2>
+<h2>—————————————</h2>
+<h2>Constrants: restriction placed on data. We need them to protect the date integrity. no, it's
+not mandatory to have.</h2>
+<h2>—————————————</h2>
+<h2>use UNIQUE statements in the value that we do not want to have duplicate in it</h2>
+<h2>—————————————</h2>
+<h2>add constrains to a table:</h2>
+<h2>—————————————</h2>
+<h2>3 major way:
+Create table then alter to add constrain, you don't have to alter any data after.
+Add constraint as we specify the column in table, we need to check on the data and make sure all the data is comply with the rule that we set.
+Add constraint in the same create statement after specified in the table.</h2>
 <h2>—————————————</h2>
 <p>
 <ul>
