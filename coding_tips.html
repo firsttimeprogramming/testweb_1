@@ -252,23 +252,29 @@ Add constraint in the same create statement after specified in the table.</h2>
 <h1>string vs string builder vs string buffer</h1>
 <p>
 	<p>
+		<h2>—————————————</h2>
 		<h2>1) String is immutable (when content is fixed)(not thread safe)</h2>
+		<h2>—————————————</h2>
 		<h2>String buffer</h2>
 		<h3>1) String buffer is mutable  (when content changes)</h3>
 		<h3>2) Thread safe</h3>
+		<h2>—————————————</h2>
 		<h2>String builder</h2>
 		<h3>1) String builder is mutable (when content changes)(more efficient)</h3>
 		<h3>2) Not thread safe</h3>
 
 		<h1>list vs set vs map</h1>
+		<h2>—————————————</h2>
 		<h2>list: allow duplicate</h2>
 		<h2>arraylist: used dynamic array, slow because it internally uses an array</h2>
 		<h2>linklist: used doubly linked list, no bit shifting is required in memory (no array), act as a list and queue</h2>
 		<h2>vector: similar to array list but it's synchronized (thread safe)</h2>
+		<h2>—————————————</h2>
 		<h2>set: not allow duplicate</h2>
 		<h2>hashset: not maintain insertion order</h2>
 		<h2>linkedhashset: maintain the insertion order</h2>
 		<h2>treeset:sort the elements by comparactor</h2>
+		<h2>—————————————</h2>
 		<h2>map: <code><key, value></key></code> where key: (unique) value: may have duplicate</h2>
 		<h2>hashmap: key, value. allow 1 null key, multiple null value. (not thread safe)</h2>
 		<h2>hashtable: (thread safe) no null keys</h2>
