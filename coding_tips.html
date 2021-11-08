@@ -23,6 +23,17 @@
 <h3>确定是否连接上网络</h3>
 <h3>ping -c 3 google.com (ping 谷歌)</h3>
 <h3>station wlan0 show (再次确认)</h3>
+<h3>enable Network Time Protocols (NTP)</h3>
+<h3>timedatectl set-ntp true</h3>
+<h3>check the NTP service status</h3>
+<h3>timedatectl status</h3>
+<h3>寻找安装硬件</h3>
+<h3>fdisk -l</h3>
+<h3>格式化硬件</h3>
+<h3>cfdisk /dev/sd?</h3>
+<h3>需要以下3个分区（gpt）：efi, linux swap, linux filesystem</h3>
+<h3>大小：300mb, 1gb, 随意</h3>
+
 <h2>—————————————</h2>
 <h2>如何在复制directory 下的所有文件？</h2>
 <h2>rsync -av ~/directly ~/directly</h2>
